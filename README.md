@@ -6,35 +6,6 @@ Este é um aplicativo Android experimental desenvolvido com **Jetpack Compose** 
 
 ---
 
-## 🎯 Objetivos
-
-- Entender o funcionamento do **Firebase Authentication** e do **Cloud Firestore**
-- Aprender a **navegar entre Activities** no Android
-- Praticar a criação de **layouts com Jetpack Compose**
-- Trabalhar em equipe para resolver problemas técnicos com autonomia
-- Salvar e recuperar dados dos usuários de forma segura na nuvem
-
----
-
-## 📱 Telas do Aplicativo
-
-- **WelcomeActivity:** Tela de boas-vindas com opções para login ou cadastro
-- **SignUpActivity:** Tela de cadastro com campos: Nome, Email, Senha, RG e CPF
-- **SignInActivity:** Tela de login com Email e Senha
-- **MainActivity:** Tela principal com dados recuperados do usuário autenticado
-
----
-
-## 🔧 Tecnologias Utilizadas
-
-- **Android Studio**
-- **Jetpack Compose**
-- **Kotlin**
-- **Firebase Authentication**
-- **Firebase Firestore**
-
----
-
 # 🛠️ Passo a Passo para Rodar o Projeto com Firebase
 
 ## 1️⃣ Passo 1: Clonar o Repositório no GitHub
@@ -44,7 +15,7 @@ Este é um aplicativo Android experimental desenvolvido com **Jetpack Compose** 
    - No terminal, navegue até o diretório onde deseja armazenar o projeto e execute o seguinte comando:
 
      ```gradle
-     git@github.com:sophiagodoy/Calculo-IMC.git
+     git@github.com:sophiagodoy/AuthExample.git
      ```
 
 ## 2️⃣ Passo 2: Criar um Projeto no Firebase
@@ -64,22 +35,13 @@ Este é um aplicativo Android experimental desenvolvido com **Jetpack Compose** 
    - Após preencher as informações, clique em **Criar Projeto**.
    - O Firebase irá criar o seu projeto e redirecioná-lo para a página principal do projeto.
 
-## 3️⃣ Passo 3: Criar um Banco de Dados Firestore
-
-1. **Ativar o Firestore**
-   - Dentro do seu projeto no **Firebase Console**, navegue até a seção **Firestore Database**.
-   - Clique em **Criar Banco de Dados**.
-
-2. **Configurar o Firestore**
-   - Após clicar em **Criar Banco de Dados**, você será guiado por um assistente para configurar o Firestore.
-   - Selecione o modo de segurança para o Firestore:
-     - **Modo de produção**: Recomendado se você já tem um app funcionando e deseja configurar regras de segurança.
-     - **Modo de teste**: Usado enquanto você desenvolve e testa o app, mas não é recomendado para produção.
-   - Escolha a **localização** do banco de dados (geralmente, você pode selecionar a opção padrão).
-   
-3. **Finalizar a configuração**
-   - Clique em **Ativar** para finalizar a criação do banco de dados Firestore.
-   - Após a criação, você poderá visualizar o banco de dados e começar a adicionar coleções e documentos.
+## 3️⃣ Passo 3: Ativar o Firebase Authentication
+  - No Firebase Console, acesse o seu projeto.
+  - No menu lateral esquerdo, clique em Authentication.
+  - Clique na aba "Método de login".
+  - Encontre a opção "E-mail/senha" e ative a primeira opção.
+  - Clique em Salvar.
+  - Para ver os usuários que foram criados basta clicar em "Usuários"
 
 ## 4️⃣ Passo 4: Vincular o App Android ao Firebase
 
@@ -120,9 +82,3 @@ Este é um aplicativo Android experimental desenvolvido com **Jetpack Compose** 
    - Você poderá ver as coleções e documentos criados pelo seu app.
 
 ---
-
-## 💡 Observações Importantes
-
-- **Certifique-se de que o arquivo `google-services.json`** está corretamente configurado e está na pasta **`app/`** do seu projeto.
-- **Verifique se as dependências do Firebase** no seu arquivo **`build.gradle`** estão corretas.
-- Caso encontre algum erro de sincronização ou autenticação, verifique as configurações no **Firebase Console** e no **Android Studio** para garantir que tudo esteja vinculado corretamente.
