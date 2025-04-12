@@ -15,7 +15,7 @@ Este é um aplicativo Android experimental desenvolvido com **Jetpack Compose** 
    - No terminal, navegue até o diretório onde deseja armazenar o projeto e execute o seguinte comando:
 
      ```gradle
-     git@github.com:sophiagodoy/AuthExample.git
+     git@github.com:sophiagodoy/Experimento_Firebase.git
      ```
 
 ## 2️⃣ Passo 2: Criar um Projeto no Firebase
