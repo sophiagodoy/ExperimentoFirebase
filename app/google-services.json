@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "442661744346",
+    "project_id": "experimentofirebase-3fe76",
+    "storage_bucket": "experimentofirebase-3fe76.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442661744346:android:4f531790c1ab7596d67fe3",
+        "android_client_info": {
+          "package_name": "br.com.ibm.experimentofirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYuz5I_63yJ3iTr_wueSxRfmW79MQffZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
